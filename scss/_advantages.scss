@@ -1,0 +1,15 @@
+.advantages {
+    margin-top: 6.25rem;
+    display: flex;
+    align-items: center;
+    &-img {
+        width: 75px;
+        margin-bottom: 2.8125rem;
+    }
+    &-item {
+        margin: 0 3.4375rem;
+    }
+    &-text {
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,117 @@
+@media (max-width: 1050px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide {
+        flex-wrap: wrap;
+    }
+    .author {
+        margin: 0 auto 15px;
+    }
+    .review {
+        text-align: center;
+        width: 100%;
+    }
+
+    .advantages {
+        display: block;
+        &-img {
+            margin-bottom: 15px;
+        }
+        &-item {
+            margin-bottom: 35px;
+        }
+    }
+
+    .cards {
+        justify-content: center;
+    }
+    .card:nth-child(odd) {
+        margin-right: 1.5625rem;
+    }
+}
+
+@media (max-width: 554px) {
+    body {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 1.875rem; // 30px
+    }
+    h2 {
+        font-size: 1.5625rem; // 25px
+    }
+    .header-description {
+        display: none;
+    }
+    .first-page-subtitle {
+        max-width: 100%;
+        &.subtitle-1 {
+            margin: 0 auto 3.25rem;
+        }
+    }
+    .slide {
+        min-width: 100px;
+        padding: 0 15px;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .reviews .slider-wrapper {
+        margin: 0 3rem;
+    }
+    .author {
+        max-width: 150px;
+        min-width: 150px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .review {
+        font-size: 14px;
+    }
+    .card {
+        margin-left: 1.5625rem;
+        margin-right: 1.5625rem;
+    }
+    .footer {
+        display: block;
+        &-left {
+            margin-bottom: 30px;
+            text-align: center;
+            .footer-list, .social {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &-right {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        justify-content: center;
+        &-right {
+            align-items: center;
+        }
+    }
+    .logo {
+        margin-left: 2.5rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .card {
+        margin: 0 0 1.5625rem;
+    }
+    .card:nth-child(odd) {
+        margin-right: 0;
+    }
+}

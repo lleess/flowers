@@ -1,0 +1,107 @@
+.goods-description {
+    margin-bottom: 4.6875rem; // 75px
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card {
+    flex-basis: 250px;
+    border: 3px solid $white;
+    padding: 1.875rem 2.1875rem; // 30px 35px
+    text-align: center;
+    margin-bottom: 1.5625rem;
+    overflow: hidden;
+    &-img {
+        width: 120px;
+        height: 120px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 1.4375rem; // 23px
+        img {
+            // width: 100%;
+        }
+    }
+    &-title {
+        margin-bottom: 1.25rem; // 20px
+    }
+    &-label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 0.4375rem; // 7px
+    }
+}
+.colors {
+    margin-bottom: 1.25rem; // 20px
+}
+.colors, .color {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.color-label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        border: 1px solid $white;
+    }
+    &.white {
+        background-color: $white;
+    }
+    &.beige {
+        background-color: $beige;
+    }
+    &.pink {
+        background-color: $pink;
+    }
+    &.red {
+        background-color: $red2;
+    }
+    &.blue {
+        background-color: $blue;
+    }
+    &.yellow {
+        background-color: $yellow;
+    }
+}
+.color-input {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    position: absolute;
+}
+.flower-quantity {
+    font-size: 16px;
+    margin-bottom: 1.25rem; // 20px
+}
+.counter-input, .counter-button {
+    width: 40px;
+    height: 40px;
+}
+.counter-input {
+    border: 2px solid $white;
+    text-align: center;
+    margin: 0 15px;
+}
+// .counter-button {
+// }
+.add-to-cart {
+    line-height: 1.2;
+    background-color: $red2;
+    text-transform: uppercase;
+    padding: 0.9375rem 1.5625rem; // 15px 25px
+    transition: .3s;
+    &:hover {
+        background-color: darken($red2, 5%);
+    }
+}
+.icon-arrow.bottom {
+    transform: rotate(90deg);
+    fill: $red2;
+}

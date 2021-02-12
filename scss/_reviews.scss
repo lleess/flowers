@@ -1,0 +1,53 @@
+.reviews {
+    .slide {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 0;
+    }
+    .slider-wrapper {
+        margin: 0 6rem;
+        overflow: hidden;
+    }
+}
+.author {
+    min-width: 220px;
+    min-height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        opacity: 0.5;
+    }
+    &-data {
+        position: absolute;
+        text-align: center;
+        .name {
+            font-weight: 700;
+        }
+        .town {
+            color: darken($white, 20%);
+        }
+    }
+}
+.review {
+    width: 60%;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    &-text {
+        margin-bottom: 1.25rem;
+    }
+    a {
+        // position: absolute;
+        // bottom: 0;
+        z-index: 10;
+        cursor: pointer;
+    }
+}

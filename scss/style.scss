@@ -1,0 +1,88 @@
+@import 'reset';
+@import 'vars';
+
+@font-face {
+    font-family: 'Gotham Pro Light';
+    src: url('../fonts/GothamPro-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro Medium';
+    src: url('../fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: $grey;
+    color: $white;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.text-red {
+    color: $red1;
+}
+.text-red-underline {
+    color: $red1;
+    text-decoration: underline;
+}
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 2.125rem; // 34px
+}
+h2 {
+    font-size: 1.875rem; // 30px
+}
+h4 {
+    font-size: 1.25rem; // 20px
+}
+.text-underline {
+    border-bottom: 2px solid $white;
+}
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+@import 'header';
+@import 'first-page';
+
+.section-wrapper {
+    border-bottom: 2px solid #4C4C4C;
+}
+.section {
+    text-align: center;
+    padding-bottom: 4.6875rem;
+}
+.btn-red-order {
+    display: inline-block;
+    background-color: $red1;
+    padding: 1.875rem 4.0625rem;
+    text-transform: uppercase;
+    transition: .3s;
+    &:hover {
+        background-color: darken($red1, 10%);
+    }
+}
+.btn-red-basket {
+    background-color: $red2; 
+    padding: 1.0625rem 1.5625rem;
+    text-transform: uppercase;
+}
+@import 'reviews';
+@import 'advantages';
+@import 'goods';
+@import 'offer';
+@import 'footer';
+@import 'mediaquery';
+@import 'modal';
+@import 'gallery';
